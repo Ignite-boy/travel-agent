@@ -41,9 +41,29 @@ _DEFAULT_INTENT: Intent = {
 }
 
 
-def parse_intent_json(raw_content: str) -> Intent:
+def _stringify_content(raw_content) -> str:
+    """Normalize LLM message content to a plain string.
+
+    Newer Gemini model responses sometimes return `content` as a list of
+    parts (e.g. [{"type": "text", "text": "..."}]) instead of a plain
+    string. Flatten it here so downstream parsing always gets a string.
+    """
+    if isinstance(raw_content, list):
+        parts = []
+        for part in raw_content:
+            if isinstance(part, dict):
+                parts.append(part.get("text", ""))
+            else:
+                parts.append(str(part))
+        return "".join(parts)
+    if raw_content is None:
+        return ""
+    return str(raw_content)
+
+
+def parse_intent_json(raw_content) -> Intent:
     """Pure parsing helper, unit-testable without an LLM."""
-    content = raw_content.strip()
+    content = _stringify_content(raw_content).strip()
     for fence in ("```json", "```"):
         if content.startswith(fence):
             content = content[len(fence):]
