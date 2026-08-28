@@ -27,6 +27,14 @@ def plan_trip(city: str, llm, days: int = 2, budget: str = "medium") -> List[str
 
 def parse_plan(content: str) -> List[str]:
     """Split out for unit testing without an LLM call."""
+    if isinstance(content, list):
+        content = "\n".join(
+            item if isinstance(item, str) else str(item)
+            for item in content
+        )
+    elif not isinstance(content, str):
+        content = str(content)
+
     lines = []
     for line in content.strip().splitlines():
         line = line.strip()

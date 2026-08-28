@@ -84,6 +84,20 @@ def chat(req: ChatRequest, background_tasks: BackgroundTasks):
     result = graph.invoke({"messages": messages_to_send}, config=config)
     answer = result["messages"][-1].content
 
+    if isinstance(answer, list):
+        parts = []
+        for item in answer:
+            if isinstance(item, dict):
+                text = item.get("text")
+                if text:
+                    parts.append(str(text))
+            elif isinstance(item, str):
+                parts.append(item)
+        answer = "\n".join(parts).strip()
+
+    if not isinstance(answer, str):
+        answer = str(answer)
+
     if settings.ENABLE_AUTO_PREFERENCE_EXTRACTION:
         background_tasks.add_task(
             extract_and_save_preferences,
