@@ -18,7 +18,7 @@ def _bool(val: str, default: bool = False) -> bool:
 class Settings:
     # --- LLM provider: "ollama" (local, free), "openai" (hosted, paid),
     #     or "gemini" (hosted, free tier available, no credit card needed) ---
-    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "ollama")
+    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "gemini")
     OLLAMA_MODEL: str = os.getenv("OLLAMA_MODEL", "qwen2.5")
     OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
@@ -29,7 +29,7 @@ class Settings:
     # --- Embeddings provider: "ollama", "openai", "gemini", or "hash" (no
     #     external deps, used automatically as a safe fallback for local
     #     dev/testing) ---
-    EMBEDDING_PROVIDER: str = os.getenv("EMBEDDING_PROVIDER", "ollama")
+    EMBEDDING_PROVIDER: str = os.getenv("EMBEDDING_PROVIDER", "hash")
     OLLAMA_EMBED_MODEL: str = os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text")
     OPENAI_EMBED_MODEL: str = os.getenv("OPENAI_EMBED_MODEL", "text-embedding-3-small")
     GEMINI_EMBED_MODEL: str = os.getenv("GEMINI_EMBED_MODEL", "models/gemini-embedding-001")
