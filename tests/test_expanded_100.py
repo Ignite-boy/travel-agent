@@ -38,7 +38,6 @@ INTENT_CASES = [
     ('{"city":"Bengaluru","days":6,"budget":"low","clear":true}', "Bengaluru", 6, "low", True),
 ]
 
-
 PLAN_CASES = [
     ("1. Check weather", ["Check weather"]),
     ("1) Check weather", ["Check weather"]),
@@ -73,7 +72,6 @@ PLAN_CASES = [
     ("* Tokyo\n* Paris\n* Delhi", ["Tokyo", "Paris", "Delhi"]),
 ]
 
-
 PREFERENCE_CASES = [
     ('[]', []),
     ('["vegetarian"]', ["vegetarian"]),
@@ -95,8 +93,8 @@ PREFERENCE_CASES = [
     ('["one", null, "two"]', ["one", "two"]),
     ('[" x ", " y "]', ["x", "y"]),
     ('[true, false, 1, 2]', []),
+    ('["solo traveler"]', ["solo traveler"]),
 ]
-
 
 @pytest.mark.parametrize("raw,city,days,budget,clear", INTENT_CASES)
 def test_expanded_intent_cases(raw, city, days, budget, clear):
@@ -106,11 +104,9 @@ def test_expanded_intent_cases(raw, city, days, budget, clear):
     assert result["budget"] == budget
     assert result["clear"] is clear
 
-
 @pytest.mark.parametrize("raw,expected", PLAN_CASES)
 def test_expanded_plan_cases(raw, expected):
     assert parse_plan(raw) == expected
-
 
 @pytest.mark.parametrize("raw,expected", PREFERENCE_CASES)
 def test_expanded_preference_cases(raw, expected):
