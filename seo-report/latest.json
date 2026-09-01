@@ -1,0 +1,344 @@
+{
+  "agent": "MILAN Deep SEO Agent",
+  "target": "https://milanlife.in",
+  "pages_checked": 13,
+  "sitemap_urls_found": 11,
+  "issues": {
+    "page_not_html_or_not_200": 1
+  },
+  "warnings": {
+    "title_length_outside_common_range": 3,
+    "images_missing_alt": 1,
+    "description_length_outside_common_range": 3,
+    "page_is_noindex": 1,
+    "h1_count_not_one": 1,
+    "no_jsonld_detected": 1
+  },
+  "pages": [
+    {
+      "url": "https://milanlife.in/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "Milan — Decentralized Social Media Where You Own Your Data",
+      "title_length": 58,
+      "description": "Milan is a privacy-first decentralized social network where you own your data. Built with Web5, DWN and DID technology. No ads, no tracking, no data selling.",
+      "description_length": 157,
+      "canonical": "https://milanlife.in/",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "MILAN"
+      ],
+      "h2_count": 12,
+      "images_without_alt": 0,
+      "og_title": "MILAN — Free Decentralized Social Media + Free Music",
+      "og_description": "A privacy-first decentralized social network built on DWN + DID. Every user owns their own real Decentralized Web Node. No ads. No tracking. Your space, your people.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/music",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [
+        "title_length_outside_common_range",
+        "images_missing_alt"
+      ],
+      "title": "Free Music Player — Listen to Bollywood, Hollywood & Millions of Songs Free | MILAN",
+      "title_length": 83,
+      "description": "Free music player — search and play millions of songs online free: Bollywood, Hollywood, Punjabi, lo-fi and more. No signup, no ads. Listen now on MILAN.",
+      "description_length": 153,
+      "canonical": "https://milanlife.in/music",
+      "robots": "",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "MILAN Music player"
+      ],
+      "h2_count": 0,
+      "images_without_alt": 1,
+      "og_title": "Free Music Player — Bollywood, Hollywood & Millions of Songs Free",
+      "og_description": "Search and play millions of songs online free on MILAN. No signup, no ads.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": [
+        "BreadcrumbList",
+        "WebApplication"
+      ]
+    },
+    {
+      "url": "https://milanlife.in/keywords",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [
+        "title_length_outside_common_range",
+        "description_length_outside_common_range"
+      ],
+      "title": "MILAN Topics & Keyword Index — Decentralized Social Media (DWN + DID)",
+      "title_length": 69,
+      "description": "Browse every topic MILAN covers: decentralized social media, DWN web nodes, DID identity, peer-to-peer messaging, user-owned data and more. 5000 topics across 13 clusters.",
+      "description_length": 171,
+      "canonical": "https://milanlife.in/keywords",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "MILAN — Topics & Keyword Index"
+      ],
+      "h2_count": 15,
+      "images_without_alt": 0,
+      "og_title": "MILAN — Topics & Keyword Index",
+      "og_description": "Every topic MILAN covers across decentralized social media, DWN, DID, messaging, storage and identity.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/decentralized-social-media",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "Decentralized Social Media — Own Your Data | Milan",
+      "title_length": 50,
+      "description": "Learn how decentralized social media works and how Milan uses DWN and DID to give users control of their data. A privacy-first social network built in India.",
+      "description_length": 157,
+      "canonical": "https://milanlife.in/decentralized-social-media",
+      "robots": "index,follow,max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "Decentralized Social Media — Own Your Data"
+      ],
+      "h2_count": 10,
+      "images_without_alt": 0,
+      "og_title": "Decentralized Social Media — Own Your Data | MILAN",
+      "og_description": "A privacy-first decentralized social network built on DWN + DID. Every user owns a real Decentralized Web Node. No ads. No tracking. Your space, your people.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/private-social-network",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "Private Social Network — A Privacy-First Alternative | Milan",
+      "title_length": 60,
+      "description": "Milan is a private, ad-free social network where you control your data. Explore a privacy-first alternative to centralized social apps using DWN and DID.",
+      "description_length": 153,
+      "canonical": "https://milanlife.in/private-social-network",
+      "robots": "index,follow,max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "A Private Social Network — Your WhatsApp & Instagram Alternative"
+      ],
+      "h2_count": 4,
+      "images_without_alt": 0,
+      "og_title": "Private Social Network — WhatsApp & Instagram Alternative | MILAN",
+      "og_description": "An ad-free, private social network where you own your data. A privacy-first alternative to WhatsApp and Instagram. Made in India.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/best-social-media-apps",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [
+        "description_length_outside_common_range"
+      ],
+      "title": "Best Social Media Apps in 2026 — Honest Comparison | MILAN",
+      "title_length": 58,
+      "description": "Which is the best social media app in 2026? An honest comparison of Instagram, X, WhatsApp, Mastodon, Bluesky and MILAN — ads, tracking, data ownership and privacy compared.",
+      "description_length": 173,
+      "canonical": "https://milanlife.in/best-social-media-apps",
+      "robots": "index,follow,max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "Best Social Media Apps in 2026 — An Honest Comparison"
+      ],
+      "h2_count": 4,
+      "images_without_alt": 0,
+      "og_title": "Best Social Media Apps in 2026 — Honest Comparison",
+      "og_description": "Ads, tracking and data ownership compared across Instagram, X, WhatsApp, Mastodon, Bluesky and MILAN.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/what-is-web5",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "What Is Web5? DWN and DID Explained | Milan",
+      "title_length": 43,
+      "description": "Understand Web5, Decentralized Web Nodes (DWN) and Decentralized Identifiers (DID) in simple terms, and see how Milan uses them for user-owned social data.",
+      "description_length": 155,
+      "canonical": "https://milanlife.in/what-is-web5",
+      "robots": "index,follow,max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "What is Web5? DWN + DID Explained Simply"
+      ],
+      "h2_count": 5,
+      "images_without_alt": 0,
+      "og_title": "What is Web5? DWN + DID Explained Simply",
+      "og_description": "Your data in your own node, your identity in your own keys — Web5 explained without jargon.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/social-media-privacy",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "Social Media Privacy — How to Protect Your Data | Milan",
+      "title_length": 55,
+      "description": "A practical guide to social media privacy, tracking and data ownership. Learn how to protect your data and how decentralized DWN + DID architecture changes the model.",
+      "description_length": 166,
+      "canonical": "https://milanlife.in/social-media-privacy",
+      "robots": "index,follow,max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "Social Media Privacy Guide 2026 — Own Your Data"
+      ],
+      "h2_count": 4,
+      "images_without_alt": 0,
+      "og_title": "Social Media Privacy Guide 2026 — Own Your Data",
+      "og_description": "What social apps track, how to protect yourself, and why data ownership is the permanent fix.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/about",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [
+        "title_length_outside_common_range",
+        "description_length_outside_common_range"
+      ],
+      "title": "About MILAN — Decentralized Social Media on DWN & DID | Founder Nitesh Pandey",
+      "title_length": 77,
+      "description": "About MILAN: a privacy-first decentralized social network founded by Nitesh Pandey, where you own your data through Decentralized Web Nodes (DWN) and Decentralized Identifiers (DID). No ads, no tracking.",
+      "description_length": 203,
+      "canonical": "https://milanlife.in/about",
+      "robots": "index, follow, max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "Social media where you actually own your data."
+      ],
+      "h2_count": 5,
+      "images_without_alt": 0,
+      "og_title": "About MILAN — Decentralized Social Media (Founder: Nitesh Pandey)",
+      "og_description": "MILAN is a privacy-first decentralized social network founded by Nitesh Pandey. You own your data through DWN and DID.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": [
+        "AboutPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "url": "https://milanlife.in/privacy",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "Privacy Policy — MILAN Decentralized Social Media",
+      "title_length": 49,
+      "description": "MILAN privacy policy. Privacy-first by default: you own your data through your own Decentralized Web Node. No ads, no tracking, no data selling. Founded by Nitesh Pandey.",
+      "description_length": 170,
+      "canonical": "https://milanlife.in/privacy",
+      "robots": "index, follow, max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "Privacy Policy"
+      ],
+      "h2_count": 12,
+      "images_without_alt": 0,
+      "og_title": "MILAN Privacy Policy",
+      "og_description": "MILAN privacy policy. Privacy-first by default: you own your data through your own Decentralized Web Node.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": [
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "url": "https://milanlife.in/terms",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [],
+      "title": "Terms of Use — MILAN Decentralized Social Media",
+      "title_length": 47,
+      "description": "MILAN terms of use for the privacy-first decentralized social network built on DWN and DID technology. Founded by Nitesh Pandey.",
+      "description_length": 128,
+      "canonical": "https://milanlife.in/terms",
+      "robots": "index, follow, max-image-preview:large",
+      "lang": "en-US",
+      "h1_count": 1,
+      "h1": [
+        "Terms of Use"
+      ],
+      "h2_count": 12,
+      "images_without_alt": 0,
+      "og_title": "MILAN Terms of Use",
+      "og_description": "MILAN terms of use for the privacy-first decentralized social network built on DWN and DID technology.",
+      "og_image": "https://milanlife.in/assets/og-cover.png",
+      "jsonld_types": [
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "url": "https://milanlife.in/app",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "issues": [],
+      "warnings": [
+        "page_is_noindex",
+        "h1_count_not_one",
+        "no_jsonld_detected"
+      ],
+      "title": "MILAN App — Private Decentralized Social Space",
+      "title_length": 46,
+      "description": "Private MILAN application workspace. Sign in to access your personal decentralized social space, messages, music and profile.",
+      "description_length": 125,
+      "canonical": "https://milanlife.in/app",
+      "robots": "noindex, nofollow, noarchive",
+      "lang": "en",
+      "h1_count": 0,
+      "h1": [],
+      "h2_count": 0,
+      "images_without_alt": 0,
+      "og_title": "MILAN App — Private Decentralized Social Space",
+      "og_description": "Sign in to your private MILAN social workspace.",
+      "og_image": "",
+      "jsonld_types": []
+    },
+    {
+      "url": "https://milanlife.in/llms.txt",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "issues": [
+        "page_not_html_or_not_200"
+      ],
+      "warnings": []
+    }
+  ],
+  "policy": {
+    "no_mass_generated_pages": true,
+    "quality_first": true,
+    "ranking_not_guaranteed": true
+  }
+}
