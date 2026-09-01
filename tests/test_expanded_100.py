@@ -108,3 +108,7 @@ def test_expanded_plan_cases(raw, expected):
 @pytest.mark.parametrize("raw,expected", PREFERENCE_CASES)
 def test_expanded_preference_cases(raw, expected):
     assert parse_preference_json(raw) == expected
+
+
+def test_parse_preference_trims_outer_whitespace():
+    assert parse_preference_json('  [" museums "]  ') == ["museums"]
