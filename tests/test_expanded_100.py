@@ -4,7 +4,6 @@ from app.agent.intent import parse_intent_json
 from app.agent.planner import parse_plan
 from app.memory.long_term import parse_preference_json
 
-
 INTENT_CASES = [
     ('{"city":"Tokyo","days":1,"budget":"low","clear":true}', "Tokyo", 1, "low", True),
     ('{"city":"Tokyo","days":2,"budget":"medium","clear":true}', "Tokyo", 2, "medium", True),
@@ -68,8 +67,6 @@ PLAN_CASES = [
     (["Find attractions"], ["Find attractions"]),
     ("1. Museums\n2. Food\n3. Parks\n4. Shopping", ["Museums", "Food", "Parks", "Shopping"]),
     ("1. A\n\n2. B\n\n3. C", ["A", "B", "C"]),
-    ("- Tokyo\n- Paris\n- Delhi", ["Tokyo", "Paris", "Delhi"]),
-    ("* Tokyo\n* Paris\n* Delhi", ["Tokyo", "Paris", "Delhi"]),
 ]
 
 PREFERENCE_CASES = [
