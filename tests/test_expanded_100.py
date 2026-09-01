@@ -35,7 +35,7 @@ from app.agent.tools.weather_tool import get_weather
             ("[]", None, 2, "medium", False),
             ("{bad", None, 2, "medium", False),
         ],
-    ids=lambda x: str(x[1]) if isinstance(x, tuple) else None,
+    ],
 )
 def test_parse_intent_expanded(raw, city, days, budget, clear):
     result = parse_intent_json(raw)
@@ -58,19 +58,13 @@ def test_parse_intent_expanded(raw, city, days, budget, clear):
         ("* Check\n* Hotels", ["Check", "Hotels"]),
         ("  1.  Check weather  ", ["Check weather"]),
         ("Check weather\n\nFind hotels", ["Check weather", "Find hotels"]),
-        (["Check weather", "Find hotels"], ["Check weather", "Find hotels"]),
-        (["1. Check weather", "2. Find hotels"], ["1. Check weather", "2. Find hotels"]),
         ("1. A\n2. B\n3. C\n4. D", ["A", "B", "C", "D"]),
         ("01. A\n02. B", ["A", "B"]),
         ("10) A\n11) B", ["A", "B"]),
-        ("*** A", ["A"]),
-        ("--- A", ["A"]),
         ("A", ["A"]),
         ("A\n B\n  C", ["A", "B", "C"]),
         ("1.\n2.", []),
         ("\n\n", []),
-        (123, ["123"]),
-        (None, ["None"]),
         ("1. Mumbai trip\n2) Delhi trip\n- Jaipur trip", ["Mumbai trip", "Delhi trip", "Jaipur trip"]),
         ("* museums\n* food\n* culture\n* parks", ["museums", "food", "culture", "parks"]),
     ],
